@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>sideshift.ai.util.SideShiftClient</PackageId>
+    <Title>SideShiftClient</Title>
+    <Authors>Firas Jelassi</Authors>
+    <Description>HTTP client to interact with the restful API of https://sideshift.ai</Description>
+    <Copyright>MIT</Copyright>
+    <PackageTags>API, crypto, sideshift, sideshift.ai</PackageTags>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32714.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SideShiftClient", "SideShiftClient\SideShiftClient.csproj", "{68EE9BC2-89DB-4BCF-8268-B6DECD201006}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{462C8503-C214-4578-A396-979DE30BECA3}"
+	ProjectSection(SolutionItems) = preProject
+		Test.cs = Test.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68EE9BC2-89DB-4BCF-8268-B6DECD201006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EE9BC2-89DB-4BCF-8268-B6DECD201006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EE9BC2-89DB-4BCF-8268-B6DECD201006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EE9BC2-89DB-4BCF-8268-B6DECD201006}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1B39D6D-7E23-41CD-AC72-82950FB7C089}
+	EndGlobalSection
+EndGlobal

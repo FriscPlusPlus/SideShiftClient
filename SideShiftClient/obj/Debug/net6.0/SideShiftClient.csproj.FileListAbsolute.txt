@@ -1,0 +1,12 @@
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\bin\Debug\net6.0\SideShiftClient.deps.json
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\bin\Debug\net6.0\SideShiftClient.dll
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\bin\Debug\net6.0\SideShiftClient.pdb
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.csproj.AssemblyReference.cache
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.AssemblyInfoInputs.cache
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.AssemblyInfo.cs
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.csproj.CoreCompileInputs.cache
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.dll
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\refint\SideShiftClient.dll
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.pdb
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\ref\SideShiftClient.dll
