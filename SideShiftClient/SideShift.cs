@@ -1,5 +1,6 @@
 ﻿using Httwrap.Interface;
 using Httwrap;
+using System.Runtime.InteropServices;
 
 namespace SideShiftClient
 {
@@ -7,14 +8,37 @@ namespace SideShiftClient
     {
         IHttwrapConfiguration? configuration = null;
         IHttwrapClient? client = null;
-        public SideShift()
+        string? sideShiftSecret = null;
+        public SideShift([Optional] string sideShiftSecret)
         {
             this.configuration = new HttwrapConfiguration("https://sideshift.ai/api/v2/");
             this.client = new HttwrapClient(this.configuration);
+            if (sideShiftSecret != null)
+            {
+                this.sideShiftSecret = sideShiftSecret;
+            }
         }
-        public void Test()
+        public void GetCoins() { }
+        public void GetPermissions() { }
+        public void GetPair() { }
+        public void GetPairs() { }
+        public void GetBulkShifts() { }
+        public void RequestQuote() { }
+        public void CreateFixedShift() { }
+        public void CreateVariableShift() { }
+        public void GetShift() { }
+        public void SetRefundAddress() { }
+        public void GetXAIStats() { }
+        public void GetAccount() { }
+        public void ListRecentShifts() { }
+
+        private Boolean CanDoRequest()
         {
-            Console.WriteLine("HELLOW WORLD!");
+            return true;
+        }
+        public void SetSideShiftSecret(string sideShiftSecret)
+        {
+            this.sideShiftSecret = sideShiftSecret;
         }
     }
 }
