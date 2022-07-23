@@ -12,4 +12,9 @@
     <PackageTags>API, crypto, sideshift, sideshift.ai</PackageTags>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Httwrap" Version="2.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
 </Project>

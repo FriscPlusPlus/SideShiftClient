@@ -10,3 +10,5 @@ C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\Si
 C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\refint\SideShiftClient.dll
 C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.pdb
 C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\ref\SideShiftClient.dll
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\obj\Debug\net6.0\SideShiftClient.csproj.App.config
+C:\Users\Firas\Documents\git\SideShiftClient\SideShiftClient\bin\Debug\net6.0\SideShiftClient.dll.config
