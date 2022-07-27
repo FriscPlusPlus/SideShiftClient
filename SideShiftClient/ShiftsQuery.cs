@@ -8,9 +8,9 @@ using System.Xml.Linq;
 
 namespace SideShiftClient
 {
-    public class ShiftsQuery
+    public class PairsQuery
     {
-        [DataMember(Name = "ids")]
-        public string Ids { get; set; }
+        [DataMember(Name = "pairs")]
+        public string Pairs { get; set; }
     }
 }

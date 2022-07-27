@@ -45,8 +45,14 @@ namespace SideShiftClient
             var parsedData = ParseArrayData(res.Body);
             return parsedData;
         }
-        /*   public  async Task GetBulkShifts() { }
-         public  async Task RequestQuote() { }
+        public async Task<List<dynamic>> GetShifts(string Ids)
+        {
+            var query = new ShiftsQuery { Ids = Ids };
+            var res = await client.GetAsync<List<dynamic>>("shifts", query);
+            var parsedData = ParseArrayData(res.Body);
+            return parsedData;
+        }
+        /* public  async Task RequestQuote() { }
          public  async Task CreateFixedShift() { }
          public  async Task CreateVariableShift() { }
          public  async Task GetShift() { }
