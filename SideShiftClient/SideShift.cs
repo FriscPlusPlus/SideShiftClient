@@ -9,40 +9,45 @@ namespace SideShiftClient
     public class SideShift
     {
         private static IHttwrapConfiguration configuration = new HttwrapConfiguration("https://sideshift.ai/api/v2/");
-        private static IHttwrapClient client = new HttwrapClient(configuration);
-        private string? sideShiftSecret = null;
+        private  IHttwrapClient client = new HttwrapClient(configuration);
+        private Dictionary<string, string> sideShiftSecret = new Dictionary<string, string>();
         public SideShift([Optional] string sideShiftSecret)
         {
             if (sideShiftSecret != null)
             {
-                this.sideShiftSecret = sideShiftSecret;
+                this.sideShiftSecret.Add("x-sideshift-secret", sideShiftSecret);
+
             }
         }
-        public static async Task<List<dynamic>> GetCoins()
+        public  async Task<List<dynamic>> GetCoins()
         {
             var res = await client.GetAsync("coins");
             var parsedData = ParseArrayData(res.Body);
             return parsedData;
         }
-        public static async Task<bool> RequestsAllowed() {
+        public  async Task<bool> RequestsAllowed() {
             var res = await client.GetAsync("permissions");
             var parsedData = JsonConvert.DeserializeObject<Permissions>(res.Body);
             return parsedData.createShift;
         }
-        /*  
-         public JObject GetPair() { }
-         public JObject GetPairs() { }
-         public JObject GetBulkShifts() { }
-         public JObject RequestQuote() { }
-         public JObject CreateFixedShift() { }
-         public JObject CreateVariableShift() { }
-         public JObject GetShift() { }
-         public JObject SetRefundAddress() { }
-         public JObject GetXAIStats() { }
-         public JObject GetAccount() { }
-         public JObject ListRecentShifts() { }*/
+         
+         public  async Task<Pair> GetPair() {
+            var res = await client.GetAsync("permissions");
+            var parsedData = JsonConvert.DeserializeObject<Pair>(res.Body);
+            return parsedData;
+        }
+       /*  public  async Task GetPairs() { }
+         public  async Task GetBulkShifts() { }
+         public  async Task RequestQuote() { }
+         public  async Task CreateFixedShift() { }
+         public  async Task CreateVariableShift() { }
+         public  async Task GetShift() { }
+         public  async Task SetRefundAddress() { }
+         public  async Task GetXAIStats() { }
+         public  async Task GetAccount() { }
+         public  async Task ListRecentShifts() { }*/
 
-        private static List<dynamic> ParseArrayData(string responseBody)
+        private  List<dynamic> ParseArrayData(string responseBody)
         {
             var parsedData = JsonConvert.DeserializeObject<List<dynamic>>(responseBody);
             return parsedData;
@@ -54,7 +59,7 @@ namespace SideShiftClient
         }
         public void SetSideShiftSecret(string sideShiftSecret)
         {
-            this.sideShiftSecret = sideShiftSecret;
+            this.sideShiftSecret.Add("x-sideshift-secret", sideShiftSecret);
         }
     }
 }
