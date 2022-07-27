@@ -8,6 +8,6 @@ namespace SideShiftClient
 {
     internal class Permissions
     {
-        public bool createShift;
+        public bool createShift { get; set; }
     }
 }
